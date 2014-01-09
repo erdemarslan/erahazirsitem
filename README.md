@@ -1,4 +1,16 @@
-erahazirsitem
-=============
+# Başlangıç
 
-Era Hazır Sitem Codeigniter tabanlı bir CMS'dir. Halen beta aşamasında ve geliştirileceği şüphelidir.
+Bu çalışma daha önce yapılmış bir çalışma olup, istek üzerine yüklenmiştir. Bu çalıştırma geliştirme aşamasında bırakılmış olup, daha fazla geliştirilmesi düşünülmemektedir. Ancak bu hali ile bile göze ve gönle hitap edebilecek düzeydedir. Problemleri "Issues" alanında belirtirseniz, boş kaldığım zamanlarda yardımcı olmaya çalışırım.
+
+# Kurulum
+
+Kurum için 3 video hazırladım. Bazı ince noktalar var. Videolarda onlara temas etmeye çalıştım. Videoda görünen bazı kodlama hataları giderilmiştir.
+1. http://www.screenr.com/YHsN
+2. http://www.screenr.com/5HsN
+3. http://www.screenr.com/NNsN
+
+# Kullanıcı Adı ve Şifre
+
+Yönetim paneli adresi http://sitenizinadi.com/admin şeklindedir.
+Kullanıcı adı : admin
+Şifre         : admin
