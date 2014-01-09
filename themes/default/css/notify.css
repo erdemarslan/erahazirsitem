@@ -1,0 +1,92 @@
+/* Corners */
+.notify_nw,
+.notify_ne,
+.notify_se,
+.notify_sw{
+	float: left;
+	height: 20px;
+	width: 20px;
+	background: url(../images/corners.png) no-repeat;
+}
+
+/* Sides */
+.notify_w,
+.notify_e {
+	float: left;
+	width: 20px;
+	background: url(../images/sides.png) repeat-y;
+}
+
+/* Center and Bottom */
+.notify_center,
+.notify_bottom {
+	clear: left;
+}
+
+/* Top and Bottom */
+.notify_n,
+.notify_s {
+	float: left;
+	background: url(../images/corners.png) no-repeat;
+	height: 20px;
+	width: 250px;
+}
+
+.notify_content {
+	float: left;
+	background: #1E211F;
+	color: #fff;
+	width: 400px;
+	text-align:center;
+	font-size:12px;
+}
+
+.notify_center {
+	background: #1E211F;
+}
+
+.notify_n {
+	background-position: -16px -49px;
+	background-repeat: repeat-x;
+}
+
+.notify_ne {
+	background-position: -20px 0;
+}
+
+.notify_se {
+	background-position: 0 -20px;
+}
+
+.notify_sw {
+	background-position: -20px -20px;
+}
+
+.notify_s {
+	background-position: -16px -70px;
+	background-repeat: repeat-x;
+}
+
+.notify_e {
+	background-position: -20px 0;
+}
+
+.notification {
+	clear: left;
+	float: left;
+	list-style: none;
+}
+
+#notification_area {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+}
+
+.notification iframe {
+	border: 0;
+}
+
+.notification iframe body {
+	margin: 0;
+}

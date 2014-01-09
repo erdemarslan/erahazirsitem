@@ -1,0 +1,190 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Era Smile Yönetim</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="css/admin2.css" type="text/css">
+<script type="text/javascript">
+	function kategori_kontrol()
+	{
+		if (document.kategori.deger.value == '')
+		{
+			alert('Form değeri boş bırakılamaz!');
+			return false;
+		} else {
+			return true;
+		}
+	}
+	
+	function youtube_kontrol()
+	{
+		if (document.youtube.deger.value == '')
+		{
+			alert('Form değeri boş bırakılamaz!');
+			return false;
+		} else {
+			return true;
+		}
+	}
+	
+	function facebook_kontrol()
+	{
+		if (document.facebook.deger.value == '')
+		{
+			alert('Form değeri boş bırakılamaz!');
+			return false;
+		} else {
+			return true;
+		}
+	}
+</script>
+</head>
+
+<body bgcolor="#efefef"><table width="96%" align="center" border="0" cellpadding="5" cellspacing="0">
+<tbody>
+<tr>
+<td class="text" valign="top" width="150" nowrap="nowrap"><table width="100%" border="0" cellpadding="1" cellspacing="0">
+<tbody><tr>
+<td bgcolor="#bccdd1">
+<table width="100%" align="center" bgcolor="#ffffff" border="0" cellpadding="15" cellspacing="0">
+<tbody>
+	<tr>
+		<td class="text"><b>Yönetim Merkezi</b><br><br>
+            <table border="0" cellpadding="0" cellspacing="0">
+                <tbody>
+                	{loop="menuler"}
+                    <tr>
+                        <td valign="top" width="14"><img src="images/arrow.gif" alt="" width="8" height="14"></td>
+                        <td class="text"><a href="{$value}">{$key}</a></td>
+                    </tr>
+                    {/loop}
+                    
+                    </table>
+				</td>
+			</tr>
+		
+	</table>
+</td>
+</tr>
+</table>
+</td><td valign="top"><table width="100%" border="0" cellpadding="1" cellspacing="0">
+<tbody><tr>
+<td bgcolor="#bccdd1">
+<table width="100%" align="center" bgcolor="#ffffff" border="0" cellpadding="15" cellspacing="0">
+<tbody><tr>
+<td class="text">
+<span class="text"><b>Sayın {$kisi} Hoşgeldiniz!</b></span><br>
+<br>
+
+  <table width="100%" border="0" cellpadding="3" cellspacing="1">
+    <tbody>
+    
+    <tr> 
+      <td class="tablehl" colspan="2" bgcolor="#58838b">Çabuk Ekle:</td>
+    </tr>
+    
+    <form name="kategori" method="post" onsubmit="return kategori_kontrol()" action="{$kategori_ekle}">
+    <tr> 
+      <td class="text" width="28%" bgcolor="#dee6e8"> 
+        Kategori Ekle:<br> </td>
+      <td class="text" width="72%" bgcolor="#dee6e8">
+      	<input name="deger" type="text" id="kategori">
+      	<input class="button" name="submit" value="Ekle" type="submit"> 
+      </td>
+    </tr>
+    </form>
+    
+    <form name="youtube" method="post" onsubmit="return youtube_kontrol()" action="{$youtube_ekle}">
+    <tr> 
+      <td class="text" width="28%" bgcolor="#dee6e8"> 
+        Youtube Videoları Ekle:<br> </td>
+      <td class="text" width="72%" bgcolor="#dee6e8">
+      	<input name="deger" type="text" id="youtube">
+      	<input class="button" name="submit" value="Ekle" type="submit"> 
+      	* Youtube da aramak istediğiniz kelimeyi yazınız!    </td>
+    </tr>
+    </form>
+    
+    <form name="facebook" method="post" onsubmit="return facebook_kontrol()" action="{$facebook_ekle}">
+    <tr> 
+      <td class="text" width="28%" bgcolor="#dee6e8"> 
+        Facebook Videoları Ekle:<br> </td>
+      <td class="text" width="72%" bgcolor="#dee6e8">
+      	<input name="deger" type="text" id="facebook">
+      	<input class="button" name="submit" value="Ekle" type="submit"> 
+      	* Facebook video adresini yazınız! 
+      </td>
+    </tr>
+    </form>
+    
+ 
+  </table><br>
+  <table width="100%" border="0" cellpadding="3" cellspacing="1">
+  <tbody><tr> 
+    <td class="tablehl" colspan="2" bgcolor="#58838b">Site İstatistikleri:</td>
+  </tr>
+  <tr> 
+    <td class="text" valign="top" width="50%" bgcolor="#dee6e8">
+	  Database size: 31.1 KB [ <a href="http://e-sms.x/photo/admin/rebuild.php?action=dbbackup">Backup</a> ]<br>
+	  [ <a href="http://e-sms.x/photo/admin/rebuild.php?action=dboptimize">Optimize &amp; repair database</a> ]<br>
+      Disk space used: <span class="error">0 bytes</span><br>
+      No. of files: 0</td>
+    <td class="text" valign="top" width="50%" bgcolor="#dee6e8">
+	  Total views: 0 [ <a href="http://e-sms.x/photo/admin/admin.php?action=delviews" onclick="return confirm('Really reset to 0?')">Reset to 0</a> ]<br>
+      Total votes: 0 [ <a href="http://e-sms.x/photo/admin/votelog.php?action=votelog">Edit</a> ]<br>
+      Total downloads: 0 [ <a href="http://e-sms.x/photo/admin/downloadlog.php?action=dwllog">Edit</a> ]<br>
+      No. of postcards sent: 0</td>
+  </tr>
+</tbody></table>
+<br>
+<table width="100%" border="0" cellpadding="3" cellspacing="1">
+  <tbody><tr> 
+    <td class="tablehl" colspan="2" bgcolor="#58838b">Server information: 
+    </td>
+  </tr>
+  <tr> 
+    <td class="text" valign="top" width="50%" bgcolor="#dee6e8"> 
+      MySQL version: 5.1.44-community<br>
+      MySQL host: localhost via TCP/IP<br>
+	  GD Version: <span class="ok">OK</span>,   2.0.34  [ <span class="ok">GIF OK</span> ]<br>
+      ImageMagick: <span class="error">No</span>, not found<br>
+	  Safe mode: <span class="ok">OK</span>, disabled</td>
+      
+    <td class="text" valign="top" width="50%" bgcolor="#dee6e8"> 
+      <a href="http://e-sms.x/photo/admin/phpinfo.php" target="_blank">PHP version:</a> 5.2.12 (apache2handler)<br>
+	  PHP upload: <span class="ok">OK</span>, enabled<br>
+      Max. PHP upload file size: 2 MB<br>
+	  Max. PHP execution time: 2 hours<br>
+	  PHP memory limit: 128 MB</td>
+  </tr>
+</tbody></table>
+
+</td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+<img src="images/blank.gif" alt="" width="10" border="0" height="8"><br>
+<table width="100%" border="0" cellpadding="1" cellspacing="0">
+<tbody><tr>
+<td bgcolor="#bccdd1">
+<table width="100%" align="center" bgcolor="#ffffff" border="0" cellpadding="15" cellspacing="0">
+<tbody><tr>
+<td class="text">
+
+<table width="100%" border="0" cellpadding="3" cellspacing="1">
+  <tbody><tr>
+    <td class="text" width="33%" align="center" nowrap="nowrap">This version: 1.542</td>
+  </tr>
+</tbody></table>
+
+ </td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+</tbody></table>
+<!-- Copyright Information -->
+
+<br><center><span class="copyright">photokorn 1.542, � 2003-2010, Telekorn scripts, <a href="http://validator.w3.org/check/referer" target="_blank">XHTML 1.0 Transitional</a></span><br></center></td></tr></tbody></table><p>&nbsp;</p></body></html>

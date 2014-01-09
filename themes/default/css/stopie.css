@@ -1,0 +1,101 @@
+/* CSS Reset */
+html,body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,p,blockquote,fieldset,input,hr {margin:0; padding:0;}
+h1,h2,h3,h4,h5,h6,pre,code,address,caption,cite,code,em,strong,th {font-size:1em; font-weight:normal; font-style:normal;}
+ul,ol {list-style:none;}
+fieldset,img,hr {border:none;}
+caption,th {text-align:left;}
+table {border-collapse:collapse; border-spacing:0;}
+td {vertical-align:top;}
+
+.clear:after {content: ""; display: block; clear: both; outline: none;}
+.clear {zoom: 1;} 
+.clear a {outline:none;}
+
+/* Body & Site Construction */
+html, body
+{
+	height: 100%;
+	min-width: 960px;
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #181818;
+	background-image: url('../images/back_main.png');
+	background-position: top center;
+	background-repeat: repeat-x;
+}
+
+/* Construction */
+#wrap
+{
+	min-height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+#wrap a:link {color: #ffffff;}
+#wrap a:visited {color: #ffffff;}
+#wrap a:hover {color: #b11717;}
+#wrap a:active {color: #b11717;}
+#wrap a:focus{color: #b11717;}
+
+#container
+{
+	width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#holder
+{
+	display: block;
+	width: 960px;
+	height: 406px;
+	background-image: url('../images/logo_main.png');
+	background-position: top left;
+	background-repeat:no-repeat;
+	margin-top: 0px;
+	margin-left: -3px;
+}
+
+#entry
+{
+	padding-top: 295px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-size: 21px;
+	color: #ffffff;
+}
+
+#entry p
+{
+	font-size: 21px;
+	color: #ffffff;
+}
+
+#icons
+{
+	margin-top: 0px;
+	padding-left: 101px;
+}
+
+div.logo
+{
+	float:left;
+	margin-right: 30px;
+}
+
+.logo p
+{
+	clear: both;
+	font-size: 13px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 15px;
+	margin-left: 0 auto;
+}

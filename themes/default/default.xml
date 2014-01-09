@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<theme>
+	<theme_name>Default Theme</theme_name>
+	<theme_desc>Bu varsayılan temadır!</theme_desc>
+	<theme_author>Erdem ARSLAN</theme_author>
+	<theme_email>erdemsaid@gmail.com</theme_email>
+	<theme_webpage>www.erdemarslan.com</theme_webpage>
+	<theme_main_folder>default/</theme_main_folder>
+	<theme_css_folder>default/css/</theme_css_folder>
+	<theme_js_folder>default/js/</theme_js_folder>
+	<theme_img_folder>default/images/</theme_img_folder>
+</theme>

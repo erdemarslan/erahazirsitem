@@ -1,0 +1,113 @@
+/**
+
+"Clean Red" skin for jQuery newsticker
+ 
+Design & code by Studio 164a
+
+**/ 
+ 
+ 
+.newsticker_wrapper {
+    background: #fff no-repeat bottom center;
+    font: 12px Arial, Helvetica, sans-serif;
+    color: #6d6e70;
+    border-top: 1px solid #e4e5e5;
+    border-bottom: 1px solid #e4e5e5;
+    padding: 5px 0 !important;
+    line-height: 23px;
+    height: 23px;
+    -webkit-text-size-adjust: none;
+} 
+
+.newsticker_wrapper h4 {
+    color: #be1e2d;
+    text-transform: uppercase;
+    border-right: 1px solid #e4e5e5;
+    padding: 0 8px 0 9px;
+    margin: 0 15px 0 0;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+.newsticker_wrapper a {
+    color: #be1e2d;
+	font-weight:bold;
+}
+
+.newsticker {
+    margin: 0;
+    padding: 0;
+}
+
+.newsticker li {
+    padding: 0 15px;
+}
+
+.newsticker_controls {
+    position: absolute;
+    right: 9px;
+    top: 5px;
+    list-style-type: none;
+    list-style-image: none; 
+    margin: 0;    
+}
+
+.newsticker_style_reveal .newsticker_controls {
+    right: 9px;
+    top: 6px;
+}
+
+.newsticker_controls li {
+    float: left;    
+    height: 23px;
+    width: 34px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.newsticker_controls .pause {
+    background-image: url('../images/jnews_pause.png');       
+}
+
+.newsticker_controls .resume {
+    background-image: url('../images/jnews_play.png');       
+}
+
+.newsticker_controls .previous {
+    background-image: url('../images/jnews_back.png');   
+    border-right: 1px solid #c9cacc;
+}
+
+.newsticker_controls .next {
+    background-image: url('../images/jnews_forward.png');   
+    border-left: 1px solid #c9cacc;
+}
+
+
+/* Reveal */
+.newsticker_style_reveal .newsticker li {
+    left: 5px !important;
+}
+
+/* Scroll */
+.newsticker_style_scroll .newsticker li {
+    margin-right: 80px;
+}
+
+
+/*
+THE MARKUP:
+
+<div class="newsticker_wrapper">
+	<h4>The Latest</h4>
+	<ul class="newsticker">
+		<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</li>
+		<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</li>
+		<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</li>
+		<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</li>
+		<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</li>
+	</ul>
+</div>
+*/

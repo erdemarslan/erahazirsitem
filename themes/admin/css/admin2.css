@@ -1,0 +1,230 @@
+body {
+margin-top: 0px;
+margin-left: 0px;
+margin-right: 0px;
+margin-bottom: 0px;
+}
+
+form { 
+display: inline; 
+}
+
+a:link, a:visited, a:active {
+color: #2A5260;
+text-decoration: none;
+}
+
+a:hover {
+color: #000000;
+text-decoration: underline;
+}
+
+.dropdown {
+font: 11px Trebuchet Ms, Arial, Helvetica, sans-serif;
+background-color: #FFFFFF;
+}
+
+.dropdownadmin {
+font: Arial, Helvetica, sans-serif;
+background-color: #FFFFFF;
+}
+
+.button {
+font: 11px Trebuchet Ms, Arial, Helvetica, sans-serif;
+}
+
+.text {
+font: 12px Trebuchet Ms, Arial, Helvetica, sans-serif;
+line-height: 18px;
+color: #000000;
+}
+
+.copyright {
+font: 12px Times, Arial, Helvetica, sans-serif;
+color: #000000;
+line-height: 18px;
+}
+
+.copyright A:link, .copyright A:visited, .copyright A:active {
+color: #2A5260;
+text-decoration: none;
+}
+
+.copyright A:hover {
+text-decoration: underline;
+}
+
+.fileinfo {
+font: 11px Trebuchet Ms, Arial, Helvetica, sans-serif;
+line-height: 16px;
+color: #58838B;
+}
+
+.error {
+font: 12px Trebuchet Ms, Arial, Helvetica, sans-serif;
+color: #ff0000;
+line-height: 18px;
+}
+
+.ok {
+font: 12px Trebuchet Ms, Arial, Helvetica, sans-serif;
+color: #12BB00;
+line-height: 18px;
+}
+
+.htaccess {
+font: 12px Trebuchet Ms, Arial, Helvetica, sans-serif;
+color: #0000FF;
+line-height: 18px;
+}
+
+.table100 {
+height: 100%;
+}
+
+.headline {
+font: 12px Trebuchet Ms, Arial, Helvetica, sans-serif;
+color: #58838B;
+font-weight: bold;
+line-height: 18px;
+}
+
+.tablehl {
+font: 12px Trebuchet Ms, Arial, Helvetica, sans-serif;
+color: #FFFFFF;
+font-weight: bold;
+line-height: 18px;
+}
+
+.thumb {
+font: 12px Trebuchet Ms, Arial, Helvetica, sans-serif;
+color: #000000;
+}
+
+.thumbimage {
+border: 0px;
+border-color: #000000;
+}
+
+.mediumimage {
+border: 0px;
+border-color: #000000;
+}
+
+.tablehl A:link, .tablehl A:visited, .tablehl A:active {
+color: #FFFFFF;
+text-decoration: none;
+}
+
+.tablehl A:hover {
+color: #FFFFFF;
+text-decoration: underline;
+}
+
+.micro {
+font: 10px Trebuchet Ms, Arial, Helvetica, sans-serif;
+line-height: 18px;
+color: #58838B;
+}
+
+.star {
+font: 16px Courier New, Arial, Helvetica, sans-serif;
+font-weight: bold;
+line-height: 18px;
+color: #58838B;
+}
+
+.menu_border{
+color: #000000;
+border: 1px solid #58838B;
+}
+
+.menu_option {
+background-color: #DEE6E8;
+font: 12px Trebuchet Ms, arial, helvetica, sans-serif;
+white-space: nowrap;
+cursor: pointer;
+}
+
+.menu_option a:link {
+color: #000000;
+text-decoration: none;
+}
+
+.menu_option a:visited {
+color: #000000;
+text-decoration: none;
+}
+
+.menu_option a:hover, .menu_option a:active {
+color: #58838B;
+text-decoration: none;
+}
+
+.menu_hilite {
+background-color: #BCCDD1;
+font: 12px Trebuchet Ms, arial, helvetica, sans-serif;
+white-space: nowrap;
+cursor: pointer;
+}
+
+.menu_hilite a:link {
+color: #000000;
+text-decoration: none;
+}
+
+.menu_hilite a:visited {
+color: #000000;
+text-decoration: none;
+}
+
+.menu_hilite a:hover, .menu_hilite a:active {
+color: #000000;
+text-decoration: none;
+}
+
+/* -------------------------------------------- */
+/*              Pagination: Digg Style                                  */
+/* -------------------------------------------- */
+#pagination-digg ul{border:0; margin:0; padding:0;}
+
+#pagination-digg li{
+        display: inline;
+        border:0 none;
+        font-size:11px;
+        list-style-image:none;
+        list-style-position:outside;
+        list-style-type:none;
+        margin:0;
+        padding:0;
+
+}
+#pagination-digg a{
+        border:solid 1px #bbb;
+        margin-right:2px;
+}
+
+#pagination-digg .next a,
+#pagination-digg .previous a {
+        font-weight:bold;
+        padding:3px 6px;
+}       
+#pagination-digg .active{
+        background:#336699 none repeat scroll 0 0;
+        color:#FFFFFF;
+        font-weight:bold;
+        display:block;
+        float:left;
+        padding:6px 6px;
+}
+#pagination-digg a:link, 
+#pagination-digg a:visited {
+        color:#336699;
+        display:block;
+        float:left;
+        padding:3px 6px;
+        text-decoration:none;
+}
+#pagination-digg a:hover{
+        border:solid 1px #380101;
+}
